@@ -15,12 +15,9 @@ const CSP = {
         'platform.twitter.com',
         'cdn.syndication.twimg.com',
         'api.github.com',
-        'cdn.carbonads.com',
-        'srv.carbonads.net',
-        'adn.fusionads.net',
-        'fallbacks.carbonads.com',
         'www.ziprecruiter.com',
         'api.ziprecruiter.com',
+        'codefund.io',
         (req, res) => `'nonce-${res.locals.nonce}'`
     ],
     styleSrc: [
@@ -39,14 +36,13 @@ const CSP = {
         '*.twitter.com',
         '*.twimg.com',
         'stats.g.doubleclick.net',
-        'fallbacks.carbonads.com',
-        'srv.carbonads.net',
-        'assets.servedby-buysellads.com',
         'ad.doubleclick.net',
-        '*.buysellads.net',
         '*.convertro.com',
         '*.c3tag.com',
         '*.2mdn.net',
+        'codefund.io',
+        'cdn.codefund.io',
+        'cdn.codefund.app',
         'launchbit.com',
         'www.launchbit.com',
         'www.ziprecruiter.com'
@@ -69,7 +65,8 @@ const CSP = {
         'ghbtns.com'
     ],
     connectSrc: [
-        'syndication.twitter.com'
+        'syndication.twitter.com',
+        'codefund.io'
     ],
     manifestSrc: ['\'self\'']
 };
