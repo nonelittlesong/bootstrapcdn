@@ -107,7 +107,7 @@ function assertSRI(uri, actualSri, done) {
 const s3include = ['content-type'];
 
 function assertHeaders(uri) {
-    //const ext = helpers.getExtension(uri);
+    // const ext = helpers.getExtension(uri);
 
     Object.keys(expectedHeaders).forEach((header) => {
         // Ignore header name case as per the specs
