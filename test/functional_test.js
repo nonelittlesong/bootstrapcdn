@@ -22,13 +22,14 @@ const responses = {};
 const expectedHeaders = {
     'accept-ranges': 'bytes',
     'access-control-allow-origin': '*',
-    'cache-control': 'max-age=31536000',
+    'cache-control': 'public, max-age=31536000',
     'connection': 'Keep-Alive',
     'content-length': '',
     'date': '',
     'debug': undefined,
     'etag': '',
     'last-modified': '',
+    'timing-allow-origin': '*',
     'vary': 'Accept-Encoding',
     'x-cache': '',
     'x-hello-human': 'Say hello back! @getBootstrapCDN on Twitter',
@@ -58,7 +59,7 @@ const compressedExtensions = [
 
 const CONTENT_TYPE_MAP = {
     css: 'text/css; charset=utf-8',
-    js: 'application/javascript; charset=utf-8',
+    js: 'text/javascript; charset=utf-8',
 
     map: 'application/json; charset=utf-8',
 
@@ -68,10 +69,10 @@ const CONTENT_TYPE_MAP = {
 
     // fonts
     eot: 'application/vnd.ms-fontobject',
-    otf: 'application/x-font-otf',
-    ttf: 'application/x-font-ttf',
-    woff: 'application/font-woff',
-    woff2: 'application/font-woff2'
+    otf: 'font/otf',
+    ttf: 'font/ttf',
+    woff: 'font/woff',
+    woff2: 'font/woff2'
 };
 
 // Helper functions used in this file
