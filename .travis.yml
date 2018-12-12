@@ -21,6 +21,7 @@ after_success:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm run coveralls; fi
 
 cache:
+  branch: bash
   directories:
     - "$HOME/.npm"
 
